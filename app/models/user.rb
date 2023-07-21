@@ -7,7 +7,6 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :posts_counter, numericality: { only_interger: true, greater_than_or_equal_to: 0 }
-
   def return_most_post
     Post.where(author_id: id).order(created_at: :desc).limit(3)
   end
