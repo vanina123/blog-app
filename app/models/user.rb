@@ -5,7 +5,6 @@ class User < ApplicationRecord
 
   after_initialize :set_default_value
 
-
   validates :name, presence: true
   validates :posts_counter, numericality: { only_interger: true, greater_than_or_equal_to: 0 }
 
