@@ -1,0 +1,18 @@
+<h1>Here is a given user</h1>
+
+  <%= render 'shared/user', user: @user %>
+
+<p><%= @user.bio %></p>
+<ul class='user-post-list'>
+  <%if @user.return_most_post.empty?%>
+    <p class='no-posts'>No posts</p>
+  <%else%>
+  <%@user.return_most_post.each do |post| %>
+    <li class ="list">
+      <%=render 'shared/post', post: post%>
+    </li>
+  <%end%>
+  <%end%>
+</ul>
+
+<%= link_to "View all posts", user_posts_path(@user), class: 'view-all-post-btn' %>
