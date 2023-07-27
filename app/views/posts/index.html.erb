@@ -1,0 +1,15 @@
+<h1>Blog App</h1>
+
+<%= render 'shared/user', user: @user %>
+<ul>
+<% if @posts.empty? %>
+  <p class='no-posts'>No posts</p>
+<% else %>
+<% @posts.each do |post|%>
+<li>
+  <%= render 'shared/post', post: post %>
+  <%= render 'shared/comment', comments: post.return_most_comment%>
+</li>
+<%end%>
+<%end%>
+</ul>

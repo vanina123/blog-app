@@ -1,0 +1,4 @@
+<h2>List of all Users</h2>
+<% @users.each do |user| %>
+  <%= render 'shared/user', user: user %>
+  <% end %>
