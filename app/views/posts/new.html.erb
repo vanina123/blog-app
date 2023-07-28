@@ -1,4 +1,4 @@
-<div>
+<div class ="post-display">
   <%= form_with model: @post, class:'form', url: user_posts_path(@user) do |form| %>
     <%= form.label :title, class: 'post_label' %>
     <%= form.text_field :title, required: true, class:'post_title' %>
