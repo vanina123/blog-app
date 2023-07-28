@@ -10,6 +10,11 @@
   <%= render 'shared/post', post: post %>
   <%= render 'shared/comment', comments: post.return_most_comment%>
 </li>
+<%= form_with url: user_post_likes_path(post.author.id, post.id) do |form| %>
+  <%= form.submit 'Like', class: 'like_btn' %>
+<% end %>
+
+<%= link_to "Add comment", new_user_post_comment_path(@user, post), class: 'view-all-post-btn' %>
 <%end%>
 <%end%>
 </ul>
