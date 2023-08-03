@@ -18,6 +18,7 @@ class PostsController < ApplicationController
     @post = @user.posts.new(post_params)
     if @post.save
       redirect_to user_post_path(@user, @post)
+
     else
       flash.now[:errors] = 'Invalid post!'
       render :new
