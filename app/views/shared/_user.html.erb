@@ -1,10 +1,9 @@
-<div class='user-content'>
-<img src = "<%= user.photo %>" alt = "user photo">
+<div class='user-content photo'>
+<%= image_tag("profile/avator.png", class: "profile_img") %>
   <div class='user-content2'>
-    <%= link_to user, class:'user-content-details' do
-    %>
+    <%= link_to user, class: "user-content-details" do %>
     <h2><%= user.name %></h2>
-    <p class='user-post-total'>Number of posts: <%=user.posts_counter%> </p>
-    <% end%>
+    <p class='user-post-total'>Number of posts: <%= user.posts_counter %> </p>
+    <% end %>
   </div>
  </div>
