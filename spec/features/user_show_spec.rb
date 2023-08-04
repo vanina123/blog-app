@@ -5,8 +5,6 @@ RSpec.describe 'User Show Page', type: :feature do
     #     username: "testuser",
     #     profile_picture_url: "path/to/profile_picture.png",
     #     bio: "This is a test user's bio."
-
-
     # Manually create sample posts for the user
     #   @posts = []
     #   5.times do |i|
