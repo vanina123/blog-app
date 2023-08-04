@@ -1,19 +1,22 @@
+<%= stylesheet_link_tag("user") %>
+<div class="row">
 <h1>Here is a given user</h1>
 
-  <%= render 'shared/user', user: @user %>
+  <%= render "shared/user", user: @user %>
 
 <p><%= @user.bio %></p>
 <ul class='user-post-list'>
-  <%if @user.return_most_post.empty?%>
+  <% if @user.return_most_post.empty? %>
     <p class='no-posts'>No posts</p>
-  <%else%>
-  <%@user.return_most_post.each do |post| %>
+  <% else %>
+  <% @user.return_most_post.each do |post| %>
     <li class ="list">
-      <%=render 'shared/post', post: post%>
+      <%= render "shared/post", post: post %>
     </li>
-  <%end%>
-  <%end%>
+  <% end %>
+  <% end %>
 </ul>
 
-<%= link_to "View all posts", user_posts_path(@user), class: 'view-all-post-btn' %>
-<%= link_to "Add Post", new_user_post_path(@user), class: 'view-all-post-btn' %>
+<%= link_to "View all posts", user_posts_path(@user), class: "view-all-post-btn" %>
+<%= link_to "Add Post", new_user_post_path(@user), class: "view-all-post-btn" %>
+</div>

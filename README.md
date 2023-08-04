@@ -114,6 +114,11 @@ To run the project, execute the following command:
 - Twitter: [@DUfevan](https://twitter.com/DufeVanina)
 - LinkedIn: [Vanina](https://www.linkedin.com/in/larissa-vanina/)
 
+👤 **Osman Wako**
+
+- GitHub: [@osmanwako](https://github.com/osmanwako)
+- Twitter: [@osmanWakow](https://twitter.com/osmanwakow)
+- LinkedIn :[@osmanWako](https://www.linkedin.com/in/osmanwako/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

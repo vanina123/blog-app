@@ -1,4 +1,9 @@
+<%= stylesheet_link_tag("user") %>
+<div class="row">
 <h2>List of all Users</h2>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <% @users.each do |user| %>
-  <%= render 'shared/user', user: user %>
+  <%= render "shared/user", user: user %>
   <% end %>
+</div>

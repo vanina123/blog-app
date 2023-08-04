@@ -7,6 +7,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rails', '~> 7.0.6'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem 'devise'
 gem 'sprockets-rails'
 
 # Use sqlite3 as the database for Active Record
@@ -66,11 +67,11 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
   gem 'rails-controller-testing'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 group :development, :test do
+  gem 'capybara'
   gem 'rspec-rails'
 end
