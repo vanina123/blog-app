@@ -11,4 +11,17 @@ Rails.application.routes.draw do
       resources :comments, only: [:new, :create]
     end
   end
+
+  namespace :api do
+    namespace :v1 do
+      get 'comments/index'
+      get 'comments/create'
+      get 'posts/index'
+      resources :users, only: [] do
+        resources :posts, only: [:index] do
+          resources :comments, only: %i[index create]
+        end
+      end
+    end
+  end
 end
